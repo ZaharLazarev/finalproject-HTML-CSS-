@@ -40,19 +40,25 @@ menu{
   padding: 0;
 }
 
-.wraper {
+.container {
+  margin:0 auto;
   width:290px;
   padding-right: 15px;
   padding-left: 15px;
   margin:0 auto;
 }
+
+/* *Header */
 .header {
+  width: 100%;
 }
-.menu-container {
-  display: flex;
-  justify-content: space-between;
+
+.header-container{
+  display:flex;
 }
+
 .header-menu {
+  
 }
 .header-logo {
 font-family: "Raleway", sans-serif;
@@ -62,6 +68,8 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #4d5ae5;
+flex-grow: 1;
+justify-content: space-between;
 }
 
 .studio{
@@ -73,7 +81,7 @@ color: #4d5ae5;
 }
 .header-menu-icon {
 }
-
+/* *Hero */
 .title{
   font-weight: 700;
   font-size: 36px;
