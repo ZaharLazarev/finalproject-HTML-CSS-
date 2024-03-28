@@ -1,0 +1,109 @@
+body{
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #434455;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+ul{
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+a{
+  text-decoration: none;
+  color: currentColor;
+}
+
+button{
+  cursor: pointer;
+}
+
+address{
+  font-style: normal;
+}
+
+menu{
+  padding: 0;
+}
+
+.wraper {
+  width:290px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin:0 auto;
+}
+.header {
+}
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+}
+.header-menu {
+}
+.header-logo {
+font-family: "Raleway", sans-serif;
+font-weight: 700;
+font-size: 18px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #4d5ae5;
+}
+
+.studio{
+  color: #2e2f42;
+}
+
+.header-svg{
+  fill: #2f2f37;
+}
+.header-menu-icon {
+}
+
+.title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  max-width: 216px;
+  margin-bottom: 72px;
+}
+
+.hero-button{
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #fff;
+border-radius: 4px;
+padding: 16px 32px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+background-color: #4d5ae5;
+
+}
+
+.hero-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 72px 52px;
+  background:linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+  background-position: center;  
+  background-repeat: no-repeat;
+  
+}
