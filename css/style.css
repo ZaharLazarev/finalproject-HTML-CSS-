@@ -3,6 +3,7 @@ body{
   font-size: 16px;
   font-weight: 400;
   color: #434455;
+  margin: 0;
 }
 
 h1,
@@ -36,12 +37,13 @@ address{
   font-style: normal;
 }
 
-menu{
-  padding: 0;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
-  margin:0 auto;
   width:290px;
   padding-right: 15px;
   padding-left: 15px;
@@ -50,11 +52,13 @@ menu{
 
 /* *Header */
 .header {
-  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .header-container{
   display:flex;
+  justify-content: space-between;
 }
 
 .header-menu {
@@ -68,8 +72,7 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #4d5ae5;
-flex-grow: 1;
-justify-content: space-between;
+/* flex-grow: 1; */
 }
 
 .studio{
@@ -81,6 +84,8 @@ justify-content: space-between;
 }
 .header-menu-icon {
 }
+
+
 /* *Hero */
 .title{
   font-weight: 700;
@@ -91,6 +96,8 @@ justify-content: space-between;
   color: #fff;
   max-width: 216px;
   margin-bottom: 72px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-button{
@@ -102,16 +109,184 @@ border-radius: 4px;
 padding: 16px 32px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 background-color: #4d5ae5;
+min-width: 169px;
+margin: auto;
 
 }
 
-.hero-container{
+.hero-wrap{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 72px 52px;
-  background:linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background:linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mob.jpg);
   background-position: center;  
   background-repeat: no-repeat;
+  background-size: cover;
   
 }
+
+.hero-container{
+}
+
+
+/* *Media */
+@media screen and (min-width:768px){
+.container{
+  width: 738px;
+}
+.hero-wrap{
+  background:linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tab.jpg);
+  margin:0 auto;
+  padding-top: 112px;
+  padding-bottom: 126px;
+}
+.title{
+  max-width:496px;
+  font-size: 56px;
+  line-height: 1.07;
+}
+.hero-container{
+}
+}
+@media screen and (min-width:1158px){
+  .container{
+    width: 1128px;
+  }
+  .hero-wrap{
+    background:linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-desktop.jpg);
+    margin:0 auto;
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .title{
+    max-width:496px;
+    font-size: 56px;
+    line-height: 1.07;
+  }
+  .header{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .header-menu-icon{
+    display: none;
+  }
+  .header-container{
+    justify-content:center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .header-logo{
+    margin-right: 76px;
+  }
+  .header-none-container{
+    gap: 332px;
+    display: flex;
+  }
+  .navigation-list{
+  display: flex;
+  gap: 40px;
+  }
+  .addsress-list{
+    display: flex;
+    gap: 40px;
+  }
+  .navigation-list-item {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    display: block;
+    }
+    .underline{
+      color: #404bbf;
+      position: relative;
+    }
+    .underline::after{
+      content: '';
+      display: block;
+      width: 48px;
+      height: 4px;
+      position:absolute;
+      left: 0;
+      bottom: -20px;
+      background: #404bbf;
+      border-radius: 2px;
+    }
+  .addsress-list-item{
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:#434455;
+    align-items: center;
+    }
+}
+
+@media (min-width:320px) and (max-width:767px){
+  .header-none-container{
+    display: none;
+  }
+}
+@media (min-width:768px) and (max-width:1157px){
+  .container{
+    width: 738px;
+  }
+  .header{
+    padding: 0;
+  }
+  .header-container{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .header-none-container{
+    gap: 120px;
+    display: flex;
+    align-items: center;
+  }
+  .header-logo{
+    margin-right: 120px;
+  }
+  .header-menu-icon{
+    display: none;
+  }
+  .navigation-list{
+  display: flex;
+  gap: 40px;
+  }
+  .addsress-list{
+    
+  }
+  .navigation-list-item {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    display: flex;
+    }
+    .underline{
+      color: #404bbf;
+      position: relative;
+    }
+    .underline::after{
+      content: '';
+      display: block;
+      width: 48px;
+      height: 4px;
+      position:absolute;
+      left: 0;
+      bottom: -30px;
+      background: #404bbf;
+      border-radius: 2px;
+    }
+  .addsress-list-item{
+    font-size: 12px;
+    line-height: 1.17;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:#434455;
+    /* align-items: center; */
+    }
+  }
