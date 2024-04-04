@@ -115,7 +115,9 @@ color: #2e2f42;
 }
 .header-menu-icon {
 }
-
+.mob-menu{
+  visibility: hidden;
+}
 
 /* *Hero */
 .title{
@@ -343,6 +345,12 @@ color: #434455;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+.footer-socmedia-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-svg{
@@ -491,8 +499,11 @@ align-items: center;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  display: block;
+  /* display: block; */
+  display: flex;
   max-width: 256px;
+  align-items: center;
+
   }
   
   .label-checkbox{
@@ -529,6 +540,7 @@ align-items: center;
     margin-right: 8px;
     fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
   }
   
   .checkbox-link{
@@ -680,6 +692,15 @@ align-items: center;
     flex-direction: column;
     gap: 16px;
   }
+  .mob-menu{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #fcfcfc;
+  }
+  .modal-icon{
+
+  }
 /* *Media */
 @media screen and (min-width:768px){
 .container{
@@ -693,6 +714,7 @@ align-items: center;
 
 /* Hero */
 .hero-wrap{
+  max-height: 436px;
   background:linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg_tab.jpg);
   margin:0 auto;
   padding-top: 112px;
@@ -1034,7 +1056,6 @@ align-items: center;
     }
     .footer-list-item{
       transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      cursor: pointer;
     }
     .footer-list-item:hover{
       background-color:  #404bbf;
