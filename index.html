@@ -38,50 +38,54 @@
           </div>
         </div>
         <div class="mob-menu">
-          <div class="menu-top-container">
-            <button class="mob-menu-button"></button>
-            <nav>
-              <ul class="menu-navigation-list">
-                <li class="navigation-list-item">
-                  <a></a>
+            <div class="menu-top-container">
+              <button type="button" class="mob-menu-button">
+                <svg width="8" height="8" class="menu-close-svg">
+                  <use href="./images/icons.svg#icon-cross"></use>
+                </svg>
+              </button>
+              <nav>
+                <ul class="menu-navigation-list">
+                  <li class="navigation-list-item">
+                    <a class="navigation-link navigation-link-colored">Studio</a>
+                  </li>
+                  <li class="navigation-list-item">
+                    <a class="navigation-link">Portfolio</a>
+                  </li>
+                  <li class="navigation-list-item">
+                    <a class="navigation-link">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="menu-bottom-container">
+              <ul class="menu-contact-list">
+                <li class="contact-list-item"><a class="contact-link contact-link-colored" href="tel:+11-000-111-11-11">+11 (000) 111-11-11</a></li>
+                <li class="contact-list-item"><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+              </ul>
+              <ul class="menu-socmedia-list">
+                <li class="socmedia-list-item">
+                  <svg width="24" height="24" class="socmedia-svg">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
                 </li>
-                <li class="navigation-list-item">
-                  <a></a>
+                <li class="socmedia-list-item">
+                  <svg width="24" height="24" class="socmedia-svg">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
                 </li>
-                <li class="navigation-list-item">
-                  <a></a>
+                <li class="socmedia-list-item">
+                  <svg width="24" height="24" class="socmedia-svg">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </li>
+                <li class="socmedia-list-item">
+                  <svg width="24" height="24" class="socmedia-svg">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
                 </li>
               </ul>
-            </nav>
-          </div>
-          <div class="menu-bottom-container">
-            <ul class="menu-address-list">
-              <li class="address-list-item"><a href=""></a></li>
-              <li class="address-list-item"><a href=""></a></li>
-            </ul>
-            <ul class="menu-socmedia-list">
-              <li class="socmedia-list-item">
-                <svg class="socmedia-svg">
-                  <use></use>
-                </svg>
-              </li>
-              <li class="socmedia-list-item">
-                <svg class="socmedia-svg">
-                  <use></use>
-                </svg>
-              </li>
-              <li class="socmedia-list-item">
-                <svg class="socmedia-svg">
-                  <use></use>
-                </svg>
-              </li>
-              <li class="socmedia-list-item">
-                <svg class="socmedia-svg">
-                  <use></use>
-                </svg>
-              </li>
-            </ul>
-          </div>
+            </div>
         </div>
     </header>
     <main>
@@ -149,7 +153,7 @@
                 class="team-list-image" 
                 src="./images/team/mark.jpg" 
                 alt="Mark Guerrero" 
-                width="264" height>               
+                width="264" height="260">               
                     <div class="team-list-container">
                       <h3 class="team-list-title">Mark Guerrero</h3>
                       <p class="team-list-text">Product Designer</p>
@@ -466,7 +470,7 @@
             <label class="footer-label">
               <input type="email" class="footer-input" name="email" placeholder="E-mail">
             </label>
-            <button class="footer-button">
+            <button type="button" class="footer-button">
               Subscribe
               <svg width="24" height="20" class="footer-button-icon">
                 <use href="./images/icons.svg#icon-telegram"></use>
@@ -479,7 +483,7 @@
     <!--! Backdrop -->
     <div class="backdrop">
       <div class="modal-icon">
-        <button class="backdrop-icon" type="button">
+        <button type="button" class="backdrop-icon">
             <svg width="8" height="8" class="backdrop-icon-svg">
               <use href="./images/icons.svg#icon-cross"></use>
             </svg>
@@ -529,11 +533,10 @@
                   <span class="checkbox-text">I accept the terms and conditions of the&nbsp;<a class="checkbox-link" href="">Privacy Policy</a></span>
                 </label>
             </div>
-            <button class="backdrop-button" type="button">Send</button>
+            <button type="button" class="backdrop-button">Send</button>
           </form>
         </div>
       </div>
     </div>
-  </div>
 </body>
 </html>
