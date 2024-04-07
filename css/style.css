@@ -387,6 +387,8 @@ text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+  display: block;
+  margin-bottom: 17.5px;
 }
 
 .footer{
@@ -423,6 +425,7 @@ text-align: center;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
 }
 
 .footer-text{
@@ -436,6 +439,7 @@ color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
 }
 
 .footer-input{
