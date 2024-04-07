@@ -76,11 +76,8 @@ color: #2e2f42;
 
 .general-container{
   margin-bottom: 72px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
 }
+
 /* *Header */
 .header {
   padding-top: 16px;
@@ -223,9 +220,6 @@ border: none;
 
 
 .hero-section{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding-top: 72px;
   padding-bottom: 72px;
   background-image:linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg_mob.jpg);
@@ -825,10 +819,13 @@ align-items: center;
 }
 /* Qualities */
 .qualities-list{
-  column-gap: 24px;
+  gap:72px 24px;
 }
 .qualities-list-item{
   width: calc((100% - 24px) / 2);
+}
+.qualities-list-item:not(:last-child){
+  margin-bottom: 0;
 }
 .qualities-item-header{
   text-align: start;
@@ -858,15 +855,17 @@ align-items: center;
   width: calc((100% - 24px) / 2);
 }
 /* Footer */
+.general-container{
+  margin-bottom: 0;
+}
 .footer-container{
+  display: flex;
   padding-left: 108px;
   padding-right: 164px;
+  flex-wrap: wrap;
+  gap: 72px 24px;
 }
-.text-media-container{
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-}
+
 .footer-text{
   max-width: 264px;
 }
@@ -1034,6 +1033,14 @@ align-items: center;
     .qualities-list-item{
       width: calc((100% - 3*24px) / 4);
     }
+    .qualities-item-header{
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+    .qualities-item-text{
+      font-weight: 400;
+    }
     .qualities-list{
       gap: 24px;
     }
@@ -1094,19 +1101,16 @@ align-items: center;
     }
     /* Footer */
     .footer-container{
-      display: flex;
+      flex-wrap: nowrap;
       padding-left:16px;
       padding-right:16px;
-      justify-content: center;
+      gap: 0;
     }
     .footer-text-container{
       margin-right: 120px;
     }
     .footer-logo{
       margin-right: auto;
-    }
-    .text-media-container{
-      gap: 0;
     }
     .social-media-container{
       margin-right: 80px;
@@ -1218,7 +1222,9 @@ align-items: center;
     line-height: 1.17;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    /* align-items: center; */
+    }
+    .addsress-list li:first-child{
+      margin-bottom:12px ;
     }
   .addsress-list-item:hover{
     color: #404bbf;
